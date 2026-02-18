@@ -1,0 +1,63 @@
+h1 {
+  color: Maroon;
+  border-color: black;
+  border-style: ridge;
+  border-width: 8px;
+  font-family: monospace;
+  font-size: 400%;
+
+  text-shadow:
+      -1px -1px 0 #000,
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+      1px 1px 0 #000;
+}
+
+.default {
+    color: black;
+    font-style: bold;
+    font-family : monospace;
+    font-size: 120%;
+}
+
+.REP {
+    font-weight: bold;
+    font-style: italic;
+}
+
+.JOB-C {
+    text-decoration-line: line-through;
+}
+
+.JOB-U {
+
+}
+
+.JOB-A {
+
+}
+
+.QMAIN {
+    color: firebrick;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+.imgRGE{
+    border-style: groove;
+    border-width: 4px; 
+    border-color: yellow;
+}
+
+.imgNYX {
+    border-style: groove;
+    border-width: 4px; 
+    border-color: indigo;
+}
+
+.test { 
+    color: green;
+}
