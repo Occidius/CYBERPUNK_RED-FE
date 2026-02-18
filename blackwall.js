@@ -28,8 +28,8 @@ function sizeAdjust(currWidth, currHeight)
         leftTarget[index].contentEditable = 'false';
         rightTarget[index].contentEditable = 'false';
         leftTarget[index].style.width = ([window.innerWidth/2] - 60) + 'px';
-        leftTarget[index].style.height = '700px';
-        rightTarget[index].style.height = '700px';
+        leftTarget[index].style.height = '750px';
+        rightTarget[index].style.height = '750px';
         rightTarget[index].style.width = ([window.innerWidth/2] - 60) + 'px';
     }
 
@@ -49,4 +49,5 @@ function headerInit()
     const RCHEADER = document.getElementById("h1");
     // RCHEADER.style.backgroundColor = `rgb(${120} ${90} ${80})`;
     RCHEADER.style.backgroundImage = `url(images/RCHEADER.jpg)`;    
+
 }
