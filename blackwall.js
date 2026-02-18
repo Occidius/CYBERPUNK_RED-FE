@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     RCHeader.style.textAlign = 'center';
     sizeAdjust(window.innerWidth, window.innerHeight)
     document.body.style.backgroundColor = `rgb(${100} ${100} ${100})`;
-    document.body.style.backgroundImage = 'url(images/RCBACKGROUND.GIF)';
+    document.body.style.backgroundImage = `url(images/RCBACKGROUND.GIF)`;
 
     headerInit();
 })
@@ -51,3 +51,4 @@ function headerInit()
     RCHEADER.style.backgroundImage = `url(images/RCHEADER.jpg)`;    
 
 }
+
