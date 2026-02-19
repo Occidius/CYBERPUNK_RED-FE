@@ -7,16 +7,31 @@
     <link rel="stylesheet" type="text/css" href="rocker.css">
     <!--<script src="blackwall.js" type='text/javascript'></script>-->
     <style>
-    body{ 
+    body { 
         background-image: url('images/RCBACKGROUND.gif');
-    }
+        background-size: 70%;
+        background-position: center;
+        }
     </style>
 
-    <title class="TITLE">CBP_R-FE Documentation</title>
+    <button class="burgMenu" id='burgMenu' onclick='openMenu()'></button>
     <h1 id='h1'>ROGUES CORNER</h1>
+    <title class="TITLE">CBP_R-FE: Rogues Corner</title>
+
 </head>
+<div id='hiddenMenu' class='hiddenMenu'>
+    <button id='closebtn' name='closebtn' onclick='closeMenu()'>[x]</button>
+    <h3>Navigation</h3>
+    <br>
+    <fieldset class='subMenuOpt' name='subMenuopt' onclick='loadPage("index.html")'>Rogues Corner</fieldset><br>
+    <fieldset class='subMenuOpt' name='subMenuopt' onclick='loadPage("newsbulletin.html")'>News Bulletin</fieldset><br>
+    <fieldset class='subMenuOpt' name='subMenuopt' onclick='loadPage("blackmarket.html")'>Shopping Network</fieldset><br>
+    <fieldset class='subMenuOpt' name='subMenuopt' onclick='loadPage("imagelibrary.html")'>Data Library</fieldset><br>
+    <fieldset class='subMenuOpt' name='subMenuopt' onclick='loadPage("netchannel.html")'>NET Access</fieldset><br>
+    <img class='subMenuImg' src='images/TTEAMAD.jpg' name='ad' id='ad' />
+</div>
 <body>
-    <div class='default'>
+    <main class='default'>
     <fieldset name='Vendor1' class='NPCContainer'>
         <img class='imgRGE' src='images/ROGUE AMENDIARES.jpg' name='image'/>
         <section id='ROGUE'>
@@ -40,8 +55,7 @@
     <fieldset name='Vendor2' class='NPCContainer'>
         <img class='imgNYX' src='images/NYX.png' name='image'/>
         <section id='NYX'>
-            <a>NYX, NETRUNNER - REP LEVEL: 3<br><i>Rep to next Level: 12/24</i><br><i>[Shop Tier 1]</i><br><br></a><Strong>PERKS: N/A</Strong>
-            NO PERK FOUND
+            <a>NYX, NETRUNNER - REP LEVEL: 3<br><i>Rep to next Level: 12/24</i><br><i>[Shop Tier 1]</i><br><br></a><Strong>PERKS:</Strong> NO PERK FOUND
         </section><br>
         <section id='MAJORjobs'><b>MAJOR JOBS:</b><br>
             <span class='JOB-C'><b>+[A/R/V/H]Slap The TV</b> - Squatter Deterrent = 700-1000 EB</span><br>
@@ -81,10 +95,9 @@
         <section id='PHOENIX'>
             <a>PHOENIX, RIPPERDOC - REP LEVEL: 3<br><i>Rep to next Level: 13/24</i><br><i>[MEDS SHOP TIER 1]</i><br><br></a>
             <Strong>PERKS: One-time 15% discount, Rogue's Treat [Applied once per player]</Strong>
-            NO PERK FOUND
         </section><br>
         <section id='MAJORjobs'><b>MAJOR JOBS:</b><br>
-            <span class='JOB-C'><b>+CYBERPSYCHO CONTRACT</b> - A freeway underpass in Watson, usually a hotspot for homeless and displaced veterans, fell completely quiet. Pre-lim reports by NCPD indicate a psycho sporting Gorilla Arms combined with hidden firearms, no confirmed sightings = 800 EB</span><br>
+            <span class='JOB-C'><b>+[A/V/R/H]CYBERPSYCHO CONTRACT</b> - A freeway underpass in Watson, usually a hotspot for homeless and displaced veterans, fell completely quiet. Pre-lim reports by NCPD indicate a psycho sporting Gorilla Arms combined with hidden firearms, no confirmed sightings = 800 EB</span><br>
             <span class='JOB-U'><b>+CYBERPSYCHO CONTRACT</b> - Another victim was spotted with a bugged out shoulder mounted grenade launcher and borg frame on the outer edges of Westbrook = 800 EB</span><br>
         </section>
         <br><section id='MINORjobs'><b>MINOR JOBS:</b><br>
@@ -135,9 +148,7 @@
         </section><br>-->
     </fieldset>
     
-    </div>
+    </main>
     <script src="blackwall.js" type="text/javascript"></script>
 </body>
-
 </html>
-
