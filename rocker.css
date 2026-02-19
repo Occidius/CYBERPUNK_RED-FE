@@ -138,6 +138,20 @@ h3 {
     width: 100%;
 }
 
+.developmentBanner {
+    background-color: firebrick;
+    font-size: 45px;
+    color: gold;
+    text-align: center;
+    text-decoration-line: underline;
+    justify-content: center;
+    border-width: 10px;
+    border-color: darkorange;
+    border-style: groove;
+    margin-top: 400px;
+    transform: rotate(30deg);
+}
+
 /* Links inside the navbar */
 /* .burgMenu a {
   float: left;
