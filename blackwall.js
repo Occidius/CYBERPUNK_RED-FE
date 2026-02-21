@@ -1,5 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     const RCHeader = document.getElementById('h1');
+    const NCbody = document.getElementById('login');
+
     RCHeader.style.textAlign = 'center';
     sizeAdjust(window.innerWidth, window.innerHeight)
     document.body.style.backgroundColor = `rgb(${100} ${100} ${100})`;
