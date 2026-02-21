@@ -113,15 +113,64 @@ function POPULATEAQM()
     JOBTASK3 = "NEPHEW: Payout processing: 1 weeks\nPRIMO: N/A\nSJ: N/A\nALT: N/A\n";
     QMTARGET[JOBTASK].textContent = JOBTASK1 + JOBTASK2 + JOBTASK3;
 
-    MINMAJ1 = "Slap the TV - Nyx\n"
+    MINMAJ1 = "Slap The TV - Nyx\n"
     MINMAJ2 = "Batteries Not Included - Torch\n"
 
     QMTARGET[MAJORMINOR].textContent = MINMAJ1 + MINMAJ2;
 }
 
-function POPULATEHQM(){}
-function POPULATEVQM(){}
-function POPULATERQM(){}
+function POPULATEHQM(){
+    const QMTARGET = document.getElementsByClassName('QMItem');
+    PCQuest1 = "Sucka Free:\n-Mr. Hands mentioned everyone in the crew playing their role, and if someone else in the crew can play the leader: I can play my part to a sweeter tune...wonder what that means...\nCONTINUE MAIN QUEST FOR UPDATES";
+    PCQuest2 = "New American Idiot:\nComplete the interview with Mito at the Pigs Wing\n";
+    QMTARGET[PCQUEST].textContent = PCQuest1 + PCQuest2;
+
+    JOBTASK1 = "-You've recieved a prospective show offer from a terribly nervous-sounding choom name \"Mito\" in SD, he asked to meet up at his bar to talk details...\n"; 
+    JOBTASK2 = ""; 
+    JOBTASK3 = "";
+    QMTARGET[JOBTASK].textContent = JOBTASK1 + JOBTASK2 + JOBTASK3;
+
+    MINMAJ1 = "Slap The TV - Nyx\n";
+    MINMAJ2 = "Underbelly - Rogue\n";
+
+    QMTARGET[MAJORMINOR].textContent = MINMAJ1 + MINMAJ2;
+}
+function POPULATEVQM(){
+    const QMTARGET = document.getElementsByClassName('QMItem');
+    PCQuest1 = "Dirty Harry: Mallard knows his weapons! We figured out that much about his past after he managed to somehow fix Boogaloo's jamming issue. Man....all these veterans across NC should really buddy-up or somethin...\nCONTINUE MAIN CAMPAIGN FOR UPDATES\n\n";
+    PCQuest2 = "BOOGALOO COMPONENTS:\nWEAPONS TECH: 49\nHIGH-GRADE MATS: 17\n";
+    QMTARGET[PCQUEST].textContent = PCQuest1 + PCQuest2;
+
+    JOBTASK1 = "Amalgamated Standard Hand: Not Started\n"; 
+    JOBTASK2 = "Turtle Kings Mantle: COMPLETED\n"; 
+    JOBTASK3 = "Rocket Powered Heely's: COMPLETED\n";
+    JOBTASK4 = "Surprise C4: COMPLETED\n";
+    JOBTASK5 = "MUNCHIES: 0/48 HRS\n";
+    JOBTASK6 = "ALT F4: 0/24 HRS\n";
+    QMTARGET[JOBTASK].textContent = JOBTASK1 + JOBTASK2 + JOBTASK3 + JOBTASK4 + JOBTASK5 + JOBTASK6;
+
+    MINMAJ1 = "Slap The TV - Nyx\n";
+    MINMAJ2 = "Batteries Not Included - Torch\n";
+
+    QMTARGET[MAJORMINOR].textContent = MINMAJ1 + MINMAJ2;
+}
+function POPULATERQM(){
+    const QMTARGET = document.getElementsByClassName('QMItem');
+    PCQuest1 = "I Did and I Don't and I Do:\nFoster?? Jaida?? Reece is missing??? What the fuck....\n-Follow up with Foster\n\n";
+    PCQuest2 = "But Once A Child:\n-Well.....I'm 53K Eddies in the hole.....fuck\n\n-Netrunner Gear: 0 / 2K\n-Weapons: 0 / 250 EB\n-Armor: 0 / 100 EB\n-Cyberware 0 / 5K\n-Misc Services: 0 / 5K\n-Housing: 0 / 40K\n-Find new Housing Option\n";
+    QMTARGET[PCQUEST].textContent = PCQuest1 + PCQuest2;
+
+    JOBTASK1 = "See Nothin\', Say Nothin\'\n-Check in with Nyx in his office.\n"; 
+    JOBTASK2 = ""; 
+    JOBTASK3 = "";
+    QMTARGET[JOBTASK].textContent = JOBTASK1 + JOBTASK2 + JOBTASK3;
+
+    MINMAJ1 = "Slap The TV - Nyx\n";
+    MINMAJ2 = "Underbelly - Rogue\n";
+    MINMAJ3 = "Batteries Not Included - Torch\n"
+
+    QMTARGET[MAJORMINOR].textContent = MINMAJ1 + MINMAJ2 + MINMAJ3;
+}
 
 function COMMONQM()
 {

@@ -47,6 +47,7 @@ h3 {
 .NETh1 {
     text-align: center;
     color: purple;
+    height: 60px;
     text-shadow:
         -1px -1px 0 #000,
         1px -1px 0 #000,
@@ -236,6 +237,10 @@ h3 {
     float: right;
     width: 265px;
     height: 265px;
+    border-style:ridge;
+    border-width: 6px;
+    border-color:aquamarine;
+    animation: wheelHueColor 10s infinite;
 }
 
 .netData .QMHeader {
