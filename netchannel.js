@@ -111,7 +111,8 @@ function POPULATEAQM()
     JOBTASK1 = "Junkyard Warehouse - Primo: Weekly 7% finders fee(X) \n^^^[Traded for reduced rent (1200 EB)]\n-Sold Tiger Skeleton to Reginald Ketel\nCalus's Lockbox:\n-[3] Electronic Locks\n-[2] Brass Padlocks\n-[1] Broken Biometric Reader\n"; 
     JOBTASK2 = "Wait for a Ping from Viktor\n"; 
     JOBTASK3 = "NEPHEW: Payout processing: 1 weeks\nPRIMO: N/A\nSJ: N/A\nALT: N/A\n";
-    QMTARGET[JOBTASK].textContent = JOBTASK1 + JOBTASK2 + JOBTASK3;
+    JOBTASK4 = "Date Night: Contact Mito using the information from Hella to setup your date\n";
+    QMTARGET[JOBTASK].textContent = JOBTASK1 + JOBTASK2 + JOBTASK3 + JOBTASK4;
 
     MINMAJ1 = "Slap The TV - Nyx\n"
     MINMAJ2 = "Batteries Not Included - Torch\n"
@@ -181,4 +182,5 @@ function COMMONQM()
 
     NPCQUEST1 = "Never Fade Away - Torch\n-Await an update on the situation\n";
     CMTARGET[NPCQUEST].textContent = NPCQUEST1;
+
 }
