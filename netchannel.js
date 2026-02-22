@@ -104,16 +104,18 @@ function ROOK()
 function POPULATEAQM()
 {
     const QMTARGET = document.getElementsByClassName('QMItem');
-    PCQuest1 = "Vigilante Shit:\nThe old contact portal does not, in fact, work...fuck.,,Maybe there\'s some other way I can grab Alt\'s attention again, ask for some advice...\n-CONTINUE MAIN CAMPAIGN FOR UPDATES\n\n";
-    PCQuest2 = "Anti-Hero: \nArasaka bastards in Japantown and now someone\'s wearing my face, messing with my network? Shits getting deep...hope you got some decent boots...\n-CONTINUE MAIN CAMPAIGN FOR UPDATES\n\n";
-    QMTARGET[PCQUEST].textContent = PCQuest1 + PCQuest2;
+    PCQUEST1 = "Vigilante Shit:\nThe old contact portal does not, in fact, work...fuck.,,Maybe there\'s some other way I can grab Alt\'s attention again, ask for some advice...\n-CONTINUE MAIN CAMPAIGN FOR UPDATES\n\n";
+    PCQUEST2 = "Anti-Hero: \nArasaka bastards in Japantown and now someone\'s wearing my face, messing with my network? Shits getting deep...hope you got some decent boots...\n-CONTINUE MAIN CAMPAIGN FOR UPDATES\n\n";
+    PCQUEST3 = "[HELLA] - New American Idiot:\nGet in touch with Mito and ask what needs to be setup for Hella's show in two days\n";
+    QMTARGET[PCQUEST].textContent = PCQUEST1 + PCQUEST2 + PCQUEST3;   
 
     JOBTASK1 = "Junkyard Warehouse - Primo: Weekly 7% finders fee(X) \n^^^[Traded for reduced rent (1200 EB)]\n-Sold Tiger Skeleton to Reginald Ketel\nCalus's Lockbox:\n-[3] Electronic Locks\n-[2] Brass Padlocks\n-[1] Broken Biometric Reader\n"; 
     JOBTASK2 = "Wait for a Ping from Viktor\n"; 
-    JOBTASK3 = "NEPHEW: Payout processing: 1 weeks\nPRIMO: N/A\nSJ: N/A\nALT: N/A\n";
+    JOBTASK3 = "NEPHEW: Payout processing: 1 weeks\nPRIMO: Investigating the disappearnce of a 'Reese O'Neil'\nSJ: N/A\nALT: N/A\n";
     JOBTASK4 = "Date Night: Contact Mito using the information from Hella to setup your date\n";
-    QMTARGET[JOBTASK].textContent = JOBTASK1 + JOBTASK2 + JOBTASK3 + JOBTASK4;
-
+    JOBTASK5 = "Keep an eye on the listing for your Old World Tequila\n";
+    QMTARGET[JOBTASK].textContent = JOBTASK1 + JOBTASK2 + JOBTASK3 + JOBTASK4 + JOBTASK5;
+    
     MINMAJ1 = "Slap The TV - Nyx\n"
     MINMAJ2 = "Batteries Not Included - Torch\n"
 
@@ -122,13 +124,13 @@ function POPULATEAQM()
 
 function POPULATEHQM(){
     const QMTARGET = document.getElementsByClassName('QMItem');
-    PCQuest1 = "Sucka Free:\n-Mr. Hands mentioned everyone in the crew playing their role, and if someone else in the crew can play the leader: I can play my part to a sweeter tune...wonder what that means...\nCONTINUE MAIN QUEST FOR UPDATES";
-    PCQuest2 = "New American Idiot:\nComplete the interview with Mito at the Pigs Wing\n";
+    PCQuest1 = "Sucka Free:\n-Mr. Hands mentioned everyone in the crew playing their role, and if someone else in the crew can play the leader: I can play my part to a sweeter tune...wonder what that means...\nCONTINUE MAIN QUEST FOR UPDATES\n\n";
+    PCQuest2 = "New American Idiot: After chatting with Mito, and agreeing to do a show for his bar (among other things) the next steps are to get that bar in working order over the next two days.\n\n";
     QMTARGET[PCQUEST].textContent = PCQuest1 + PCQuest2;
 
-    JOBTASK1 = "-You've recieved a prospective show offer from a terribly nervous-sounding choom name \"Mito\" in SD, he asked to meet up at his bar to talk details...\n"; 
-    JOBTASK2 = ""; 
-    JOBTASK3 = "";
+    JOBTASK1 = "N.A.I. - Source a construction crew to refurb the bar and get it fixed up\n"; 
+    JOBTASK2 = "N.A.I. - Make a social post about the show, it's location, and any requests for the fans to figure out (catering, decor, lighting, stage effects, etc.)\n"; 
+    JOBTASK3 = "N.A.I. - (OPTIONAL): Contact El Capitan, Sammie, and Valve to see if they want to participate in running the show\n";
     QMTARGET[JOBTASK].textContent = JOBTASK1 + JOBTASK2 + JOBTASK3;
 
     MINMAJ1 = "Slap The TV - Nyx\n";
@@ -158,10 +160,10 @@ function POPULATEVQM(){
 function POPULATERQM(){
     const QMTARGET = document.getElementsByClassName('QMItem');
     PCQuest1 = "I Did and I Don't and I Do:\nFoster?? Jaida?? Reece is missing??? What the fuck....\n-Follow up with Foster\n\n";
-    PCQuest2 = "But Once A Child:\n-Well.....I'm 53K Eddies in the hole.....fuck\n\n-Netrunner Gear: 0 / 2K\n-Weapons: 0 / 250 EB\n-Armor: 0 / 100 EB\n-Cyberware 0 / 5K\n-Misc Services: 0 / 5K\n-Housing: 0 / 40K\n-Find new Housing Option\n";
+    PCQuest2 = "But Once A Child:\n-Okay....we're making some progress!\n\n-Netrunner Gear: 0 / 2K\n-Weapons: 0 / 250 EB\n-Armor: 0 / 100 EB\n-Cyberware 0 / 5K\n-Misc Services: 0 / 5K\n-Housing: 8.5K / 40K\n-Find new Housing Option\n";
     QMTARGET[PCQUEST].textContent = PCQuest1 + PCQuest2;
 
-    JOBTASK1 = "See Nothin\', Say Nothin\'\n-Check in with Nyx in his office.\n"; 
+    JOBTASK1 = "See Nothin\', Say Nothin(2)\'\n-Wait for Nyx to contact you.\n"; 
     JOBTASK2 = ""; 
     JOBTASK3 = "";
     QMTARGET[JOBTASK].textContent = JOBTASK1 + JOBTASK2 + JOBTASK3;
@@ -178,9 +180,15 @@ function COMMONQM()
     
     const CMTARGET = document.getElementsByClassName('CommonItem');
 
-    CMTARGET[CAMPAIGN].textContent = "Understanding a Ghost - Rogue(Proxy: Torch)\n";
+    CMTARGET[CAMPAIGN].textContent = "Understanding a Ghost - Rogue(Proxy: Torch)\n-Torch contacted the group with info about the next job involving the Ghoul, apparently some sort of sting operation, or a hit-and-run\n-REWARD: 2000 EB\n";
 
     NPCQUEST1 = "Never Fade Away - Torch\n-Await an update on the situation\n";
+    NPCQUEST2 = "Tech Drops - Torch\nInvestigate the safehouse locations Torch sent your crew\n";
     CMTARGET[NPCQUEST].textContent = NPCQUEST1;
-
 }
+
+function boldString(str, substr) {
+  var strRegExp = new RegExp(substr, 'g');
+  return str.replace(strRegExp, '<b>'+substr+'</b>');
+}
+// Example: boldString("Hello, el", "el") → "H<b>el</b>lo, <b>el</b>"   
