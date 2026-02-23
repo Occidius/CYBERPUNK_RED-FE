@@ -191,5 +191,4 @@ function boldString(str, substr) {
   var strRegExp = new RegExp(substr, 'g');
   return str.replace(strRegExp, '<b>'+substr+'</b>');
 }
-
 // Example: boldString("Hello, el", "el") → "H<b>el</b>lo, <b>el</b>"   

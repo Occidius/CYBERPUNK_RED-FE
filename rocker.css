@@ -44,6 +44,16 @@ h3 {
     background-image: url('images/SITEASSETS/NBHEADER.jpg');
 }
 
+.NBh2 {
+    color: darkorange;
+    font-size: 150%;
+    text-shadow:
+    -1px -1px 0 black,
+    1px -1px 0 black,
+    -1px 1px 0 black,
+    1px 1px 0 black;
+}
+
 .NETh1 {
     text-align: center;
     color: purple;
@@ -155,6 +165,15 @@ h3 {
 
 .ILRIGHT .ILRIGHTIMG {
     width: 100%;
+}
+
+.newsContainer{
+    border-style:double;
+    border-width: 4px; 
+    border-color: orangeRed;
+    color: darkorange;
+    background-color: darkslategray;
+    font-family: monospace;
 }
 
 /* The navigation bar */
@@ -289,7 +308,7 @@ h3 {
     border-width: 4px;
     font-family: monospace;
     font-size: 20px;
-    
+    width: 90%;
 }
 
 .netData .plrImg {

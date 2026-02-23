@@ -49,10 +49,6 @@ function loadPage(destination)
 {
     // alert("CALLED, SEND TO: " + destination);
     window.location.href = destination;
-    if (destination === 'imagelibrary.html')
-    {
-        loadImageLibrary();
-    }
 }
 
 function openMenu()
