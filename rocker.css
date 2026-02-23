@@ -27,7 +27,7 @@ h3 {
     border-color: gray;
     border-style: ridge;
     border-width: 8px;
-    background-image: url('images/NAVBACKGROUND.gif');
+    background-image: url('images/SITEASSETS/NAVBACKGROUND.gif');
     text-align: center;
     font-family: monospace;
     font-size: 200%;
@@ -41,7 +41,7 @@ h3 {
         2px -2px 0 #000,
         -2px 2px 0 #000,
         2px 2px 0 #000;
-    background-image: url('images/NBHEADER.jpg');
+    background-image: url('images/SITEASSETS/NBHEADER.jpg');
 }
 
 .NETh1 {
@@ -95,24 +95,67 @@ h3 {
     text-align: center;
     color: BLACK;
     text-shadow:
-        -1px -1px 0 maroon,
-        1px -1px 0 maroon,
-        -1px 1px 0 maroon,
-        1px 1px 0 maroon;
-    background-image: url('images/NETPANELHEADER.jpg')
+        -2px -2px 0 maroon,
+        2px -2px 0 maroon,
+        -2px 2px 0 maroon,
+        2px 2px 0 maroon;
+    background-image: url('images/SITEASSETS/BMHEADER.jpg')
 }
 
 .ILh1 {
     text-align: center;
     color: mediumturquoise;
     text-shadow:
+        -2px -2px 0 black,
+        2px -2px 0 black,
+        -2px 2px 0 black,
+        2px 2px 0 black;
+    background-image: url('images/SITEASSETS/ILHEADER.jpg');
+    background-size: 11%;
+    background-origin: border-box;
+}
+
+.IMGLIB
+{
+    color: aqua;
+    text-shadow:
         -1px -1px 0 black,
         1px -1px 0 black,
         -1px 1px 0 black,
         1px 1px 0 black;
-    background-image: url('images/NETPANELHEADER.jpg')
+    font-family: monospace;
+    width: 100%;
 }
 
+.ILLEFT {
+    float: right;
+    max-width: 29%;
+    border-color: lightskyblue;
+}
+
+.ILLEFT .ILLEFTIMG {
+    width: 100%;
+}
+
+.ILMID {
+    float:right;
+    width: 29%;
+    border-color: lightskyblue;
+}
+
+.ILMID .ILMIDIMG {
+    width: 100%;
+}
+
+.ILRIGHT {
+    float: right;
+    width: 29%;
+    border-color: lightskyblue;
+}
+
+.ILRIGHT .ILRIGHTIMG {
+    width: 100%;
+}
 
 /* The navigation bar */
 .burgMenu {
@@ -120,7 +163,7 @@ h3 {
   position: absolute; /* Set the navbar to fixed position */
   background-color: gray;
   border-style: hidden;
-  background-image: url('images/HAMBURG.png');
+  background-image: url('images/SITEASSETS/HAMBURG.png');
   background-size: 51px;
   margin-left: 10px;
   margin-top: 11px;
@@ -166,7 +209,7 @@ h3 {
     -1px 1px 0 rgb(255, 0, 255),
     1px 1px 0 rgb(255, 0, 255);
     
-    background-image: url('images/NAVBACKGROUND.gif');
+    background-image: url('images/SITEASSETS/NAVBACKGROUND.gif');
     background-position: 12%;
 }
 
@@ -175,6 +218,24 @@ h3 {
     bottom:0px;
     width: 100%;
     max-height: 50%;
+}
+
+.STORECONTAINER {
+    font-family: monospace;
+    font-size: 125%;
+    background-color: black;
+    color: rgb(220,220,220);
+}
+
+.RBOW {
+    color: rgb(236, 100, 75);
+    animation: wheelHueColor 10s infinite;
+}
+
+.STORECONTAINER .contImg {
+    float: right;
+    height: 100px;
+    width: 100px;
 }
 
 .login {
@@ -320,7 +381,7 @@ h3 {
 }
 
 .NPCContainer{
-    background-image: url('images/NPCBACK.jpg');
+    background-image: url('images/SITEASSETS/NPCBACK.jpg');
     background-position-x: 200px;
     background-position-y: 180px;
 }
@@ -372,36 +433,54 @@ h3 {
     border-style: groove;
     border-width: 4px; 
     border-color: yellow;
+    float: right;
+    height: 100px;
+    width: 100px;
 }
 
 .imgNYX {
     border-style: groove;
     border-width: 4px; 
     border-color: indigo;
+    float: right;
+    height: 100px;
+    width: 100px;
 }
 
 .imgTCH{
     border-style: groove;
     border-width: 4px; 
     border-color: darkBlue;
+    float: right;
+    height: 100px;
+    width: 100px;
 }
 
 .imgPNX{
     border-style: groove;
     border-width: 4px; 
     border-color: chartreuse;
+    float: right;
+    height: 100px;
+    width: 100px;
 }
 
 .imgCPT{
     border-style: groove;
     border-width: 4px; 
     border-color: cyan;
+    float: right;
+    height: 100px;
+    width: 100px;
 }
 
 .imgPNM{
     border-style: groove;
     border-width: 4px; 
     border-color: goldenrod;
+    float: right;
+    height: 100px;
+    width: 100px;
 }
 
 .test { 

@@ -7,7 +7,7 @@
     <!--<script src="blackwall.js" type='text/javascript'></script>-->
     <style>
     body { 
-        background-image: url('images/BMBACKGROUND.gif');
+        background-image: url('images/SITEASSETS/BMBACKGROUND.gif');
         background-size: 110%;
         background-position: center;
         }
@@ -25,13 +25,100 @@
     <fieldset class='subMenuOpt' name='subMenuopt' onclick='loadPage("index.html")'>Rogues Corner</fieldset><br>
     <fieldset class='subMenuOpt' name='subMenuopt' onclick='loadPage("newsbulletin.html")'>News Bulletin</fieldset><br>
     <fieldset class='subMenuOpt' name='subMenuopt' onclick='loadPage("blackmarket.html")'>Shopping Network</fieldset><br>
-    <fieldset class='subMenuOpt' name='subMenuopt' onclick='loadPage("imagelibrary.html")'>Data Library</fieldset><br>
+    <fieldset class='subMenuOpt' name='subMenuopt' onclick='loadPage("imagelibrary.html")' onclick='loadImageLibrary()'>Data Library</fieldset><br>
     <fieldset class='subMenuOpt' name='subMenuopt' onclick='loadPage("netchannel.html")'>NET Access</fieldset><br>
-    <img class='subMenuImg' src='images/TTEAMAD.jpg' name='ad' id='ad' />
+    <img class='subMenuImg' src='images/SITEASSETS/TTEAMAD.jpg' name='ad' id='ad' />
 </div>
 <body>
-    <fieldset class='DevelopmentBanner'>IN-DEVELOPMENT</fieldset>
+    <fieldset name='Vendor1' class='STORECONTAINER'>
+        <img class='imgRGE' src='images/NPCIMAGES/ROGUE AMENDIARES.jpg' name='image'/>
+        <section id='ROGUE'>
+            <span><b><span class='RBOW'>Rogue - Armor Shop: Tier 1</span></b></span><br>
+            <span><strong>==========================================================</strong></span>
+        <section name='RGESTORE' id='OFFERS'><b></b>
+            <span><b><span class='RBOW'>Kevlar</span></b> => <b>50 EB</b> | <i>Simple body armor, purchase either <b>head</b> or <b>body</b> versions. Provides 7 SP to respective body part.<br>Cannot be stacked</i></Span><br><br>
+            <span><b><span class='RBOW'>Leathers</span> => 20 EB</b> | <i>Light, comfortable clothing offering light protection. Purchase either <b>head</b> or <b>body</b> options.<br>Cannot be stacked</i></Span><br><br>
+            <span><b><span class='RBOW'>Light ArmorJak</span> => 100EB</b> | <i>Modest, respectable armor made from Kevlar and plastic weave-mesh. Purchase either <b>head</b> or <b>body</b> versions, adds 11 SP to respective body parts.<br>Cannot be stacked.</i></Span><br><br>
+            <span><b><span class='RBOW'>Medium ArmorJak</span> => 100EB</b> | <i>Sizable, chunky, heavy protective gear. Adds 12 SP to a respective body part at the cost of -2 to REF, DEX, and MOVE. Purchase either <b>head</b> or <b>body</b> versions.<br>Cannot be stacked.</i></Span><br><br>
+            <span><b><span class='RBOW'>Flak</span> => 500 EB</b> | <i>Among the lesser used armor, as it protects the wearer at the cost of everything an edgerunner should be on the job. Adds 15 SP to a respective body part at the cost of -4 to REF, DEX, and MOVE. Purchase either <b>head</b> or <b>body</b> versions.<br> Cannot be stacked. -> <strong>STOCK: 2</strong></i></Span><br><br>
+            <span><b><span class='RBOW'>Bodyweight Suit</span> => 1K EB</b> | <i>Favored by Netrunners and society-shunned fashion gurus, the type of "armor" you put on and forget about. Adds 11 SP to the users entire body, <b>only a full-body</b> version exists on traditional markets.<br>Cannot be stacked. -> <strong>STOCK: 2</strong></i></Span><br><br>
+        </section>
+        </section>
+    </fieldset>
 
+    <fieldset name='Vendor2' class='STORECONTAINER'>
+        <img class='imgNYX' src='images/NPCIMAGES/NYX.png' name='image'/>
+        <section id='NYX'>
+            <span><b><span class='RBOW'>Nyx - Webhead Pitstop: Tier 1</b></span><br>
+            <span><strong>==========================================================<br></strong></span>
+        <section id='OFFERS'><b></b>
+            <span><b><span class='RBOW'>Eraser</span> (NETRUNNER) => 20 EB</b> | <i>Booster Program for Netrunners, +2 to all Cloak Checks</i></Span><br><br>
+            <span><b><span class='RBOW'>Seeya</span> (NETRUNNER) => 20 EB</b> | <i>Booster Program  for Netrunners, +2 to Pathfinder Checks</i></Span><br><br>
+            <span><b><span class='RBOW'>Armor</span> (NETRUNNER) => 50 EB</b> | <i>Defender Program for Netrunners, decreases taken Meat damage by 4. Only one can be used per Netrun</i></Span><br><br>
+            <span><b><span class='RBOW'>Banhammer</span> (NETRUNNER) => 50 EB</b> | <i>Attacker Program for Netrunners, deals 3d6 damage to Non-Black ICE programs, 2d6 against Black ICE programs</i></Span><br><br>
+            <span><b><span class='RBOW'>Sword</span> (NETRUNNER) => 50 EB</b> | <i>Attacker Program for Netrunners, deals 3d6 damage to Non-Black ICE programs, 2d6 against Black ICE programs</i></Span><br><br>
+            <span><b><span class='RBOW'>Poor Quality Cyberdeck</span> => 100 EB</b> | <i>Allows for basic netrunning functionality, includes a set of Virtuality Goggles.<br><b>Includes 5 Option Slots</b></i></Span><br><br>
+        </section>
+        </section>
+    </fieldset>
+
+    <fieldset name='Vendor1'  class='STORECONTAINER'>
+        <img class='imgTCH' src='images/NPCIMAGES/TORCH.jpg' name='image'/>
+        <section id='Torch'>
+            <span><b><span>Torch - 'Junk' Heap: Tier 0</span></b></span><br>
+            <span><strong>==========================================================<br></strong></span>
+        <section name='NYXSTORE' id='OFFERS'><b></b>
+            <span><i>Torch's not offering anything right now, he's a little too pre-occupied but he can probably crank out a quick upgrade, assuming you're good for the cred...</i></Span><br>
+        </section>
+        </section>
+    </fieldset>
+
+    <fieldset name='Vendor2'  class='STORECONTAINER'>
+        <img class='imgPNX' src='images/NPCIMAGES/PHOENIX.jpg' name='image'/>
+        <section id='PHOENIX'>
+            <span><b><span class='RBOW'>Phoenix - Chop Shop: Tier 1</span></b></span><br>
+            <span><strong>==========================================================<br></strong></span>
+            <span><i>Phoenix can install any non-hospital level piece of cyberware or fashionware. Anything under non-installation ware will have to be handled at an established hospital.</i><br>
+            <span><strong>==========================================================<br></strong></span>
+        <section name='PNXSTORE' id='OFFERS'><b></b>
+         <span><strong><span class='RBOW'>||||||||||||||||||||||||Items On Retail||||||||||||||||||||||||</strong></span><br>
+            <span><b><span class='RBOW'>Airhypo</span> => 50 EB</b> | <i> Emergency medication applicator, allows for administration of single-use medication doses</i></Span><br><br>
+            <span><b><span class='RBOW'>Medscanner</span> => 100 EB</b> | <i>Allows a learned user to assess internal and external injuries of themselves or a crew member prior to treatment (+2 to medicine-related checks)</i></Span><br><br>
+            <span><b><span class='RBOW'>Anti-biotic</span> => 25 EB EACH</b> | <i>[REQUIRES AIRHYPO]<br><strong>STOCK: 2</strong></i></Span><br><br>
+            <span><b><span class='RBOW'>Rapidetox</span> => 25 EB EACH</b> | <i>[REQUIRES AIRHYPO]</i></Span><br><br>
+            <span><b><span class='RBOW'>Speedheal</span> => 50 EB EACH</b> | <i>[REQUIRES AIRHYPO]</i></Span><br><br>
+         <span><strong><span class='RBOW'>||||||||||||||||||||||||Available Cyberware||||||||||||||||||||||||</span></strong></span><br>
+            <span><b><span class='RBOW'>Neural Link</span> => 500 EB</b> | <i>Required to use Neuralware and subdermal grips</i></Span><br><br>
+            <span><b><span class='RBOW'>Cybereye</span> => 100 EB</b> | <i>3 option slots, replaces a meat eye semi-permanently, HL calculated separately for each eye</i></Span><br><br>
+            <span><b><span class='RBOW'>Cyberaudio</span> Suite => 500 EB</b> | <i>3 option slots, one per customer</i></Span><br><br>
+            <span><b><span class='RBOW'>Fashionware</span> => 100 EB each</b> | <i>Biomonitor, Chemskin, Light Tattoo, Shift-tacts, SkinWatch, Techhair</i></Span><br><br>
+            <span><b><span class='RBOW'>Hardened Shielding</span> => 1000 EB</b> | <i>Cyberlimb with this installed cannot be rendered inoperable except if by Black-ICE or Crits</i></Span><br><br>
+            <span><b><span class='RBOW'>EMP Threading</span> => 10 EB</b> | <i>Circuit-like silver tracing running across the body, popularized by media sensation "UR"</i></Span><br><br>
+            <span><b><span class='RBOW'>Plastic Covering</span> => 100 EB</b> | <i>Plastic covering to add some style to your chrome</i></Span><br><br>
+            <span><b><span class='RBOW'>Realskinn Covering</span> => 500 EB</b> | <i>Artificial skin covering for a cyberlimb</i></Span><br><br>
+            <span><b><span class='RBOW'>Superchrome Covering</span> => 1000 EB</b> | <i>+2 to Wardrobe and Style Skill, Shiny metallic coating for Cyberlimb</i></Span><br><br>
+            <span><strong><span class='RBOW'>||||||||||||||||||||||||Non-Installation Ware||||||||||||||||||||||||</span></strong></span><br>
+            <span><b><span class='RBOW'>Cyberarm</span> => 500 EB</b> | <i>Replacement arm, includes 4 option slots for Cyberarm or Cyberlimb options</i></Span><br><br>
+            <span><b><span class='RBOW'>Standard Hand</span> => 100 EB</b> | <i>Mechanical hand, can be installed on a meat arm or cyberarm (does not use an option slot)</i></Span><br><br>
+            <span><b><span class='RBOW'>Standard Foot</span> => 100 EB</b> | <i>Mechanical foot, can be installed on a meat or cyberleg (does not use an option slot)</i></Span><br><br>
+        </section>
+        </section>
+    </fieldset>
+
+    <fieldset name='Vendor1'  class='STORECONTAINER'>
+        <img class='imgCPT'src='images/NPCIMAGES/EL CAPITAN.jpg' name='image'/>
+        <section id='CAPITAN'>
+            <span><b><span>El Capitan - Capitan's Stock: Tier 1</span></b></span><br>
+            <span><strong>==========================================================<br></strong></span>
+        <section name='CPTSTORE' id='OFFERS'><b></b>
+            <span><i>El Capitan is not offering anything right now, he has a tendency to keep the best stuff for himself anyway.<br>Rank 5 required</i></span>
+        </section>
+        </section>
+        </section>
+    </fieldset>
+
+
+    <!--<fieldset class='DevelopmentBanner'>IN-DEVELOPMENT</fieldset>-->
     <script src="blackwall.js" type="text/javascript"></script>
 </body>
 </html>

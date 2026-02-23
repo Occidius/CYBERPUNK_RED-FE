@@ -35,16 +35,6 @@ function sizeAdjust(currWidth, currHeight)
         rightTarget[index].style.height = '800px';
         rightTarget[index].style.width = ([window.innerWidth/2] - 60) + 'px';
     }
-
-    const image = document.getElementsByName('image');
-    for (imgIndex = 0; imgIndex < image.length; imgIndex++)
-    {
-        image[imgIndex].style.width = '100px';
-        image[imgIndex].style.height = '100px';
-        image[imgIndex].style.display = 'inline-block';
-        image[imgIndex].style.float = 'right';
-        image[imgIndex].isContentEditable = 'false';
-    }
 }
 
 function headerInit()
@@ -52,13 +42,17 @@ function headerInit()
     const RCHEADER = document.getElementById("h1");
     const HAMBURG = document.getElementById("burgButton");
     // RCHEADER.style.backgroundColor = `rgb(${120} ${90} ${80})`;
-    RCHEADER.style.backgroundImage = `url(images/RCHEADER.jpg)`;  
-    HAMBURG.style.backgroundImage = `url(image/HAMBURG.png)`;
+    RCHEADER.style.backgroundImage = `url(images/SITEASSETS/RCHEADER.jpg)`;  
+    HAMBURG.style.backgroundImage = `url(images/SITEASSETS/HAMBURG.png)`;
 }
 function loadPage(destination)
 {
     // alert("CALLED, SEND TO: " + destination);
     window.location.href = destination;
+    if (destination === 'imagelibrary.html')
+    {
+        loadImageLibrary();
+    }
 }
 
 function openMenu()
