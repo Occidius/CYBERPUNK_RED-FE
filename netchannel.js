@@ -116,7 +116,7 @@ function POPULATEAQM()
     JOBTASK5 = "Keep an eye on the listing for your Old World Tequila\n";
     QMTARGET[JOBTASK].textContent = JOBTASK1 + JOBTASK2 + JOBTASK3 + JOBTASK4 + JOBTASK5;
     
-    MINMAJ1 = "Slap The TV - Nyx\n"
+    MINMAJ1 = ""
     MINMAJ2 = "Batteries Not Included - Torch\n"
 
     QMTARGET[MAJORMINOR].textContent = MINMAJ1 + MINMAJ2;
@@ -133,8 +133,8 @@ function POPULATEHQM(){
     JOBTASK3 = "N.A.I. - (OPTIONAL): Contact El Capitan, Sammie, and Valve to see if they want to participate in running the show\n";
     QMTARGET[JOBTASK].textContent = JOBTASK1 + JOBTASK2 + JOBTASK3;
 
-    MINMAJ1 = "Slap The TV - Nyx\n";
-    MINMAJ2 = "Underbelly - Rogue\n";
+    MINMAJ1 = "";
+    MINMAJ2 = "";
 
     QMTARGET[MAJORMINOR].textContent = MINMAJ1 + MINMAJ2;
 }
@@ -152,7 +152,7 @@ function POPULATEVQM(){
     JOBTASK6 = "ALT F4: 0/24 HRS\n";
     QMTARGET[JOBTASK].textContent = JOBTASK1 + JOBTASK2 + JOBTASK3 + JOBTASK4 + JOBTASK5 + JOBTASK6;
 
-    MINMAJ1 = "Slap The TV - Nyx\n";
+    MINMAJ1 = "";
     MINMAJ2 = "Batteries Not Included - Torch\n";
 
     QMTARGET[MAJORMINOR].textContent = MINMAJ1 + MINMAJ2;
@@ -168,8 +168,8 @@ function POPULATERQM(){
     JOBTASK3 = "";
     QMTARGET[JOBTASK].textContent = JOBTASK1 + JOBTASK2 + JOBTASK3;
 
-    MINMAJ1 = "Slap The TV - Nyx\n";
-    MINMAJ2 = "Underbelly - Rogue\n";
+    MINMAJ1 = "";
+    MINMAJ2 = "";
     MINMAJ3 = "Batteries Not Included - Torch\n"
 
     QMTARGET[MAJORMINOR].textContent = MINMAJ1 + MINMAJ2 + MINMAJ3;
@@ -191,4 +191,5 @@ function boldString(str, substr) {
   var strRegExp = new RegExp(substr, 'g');
   return str.replace(strRegExp, '<b>'+substr+'</b>');
 }
+
 // Example: boldString("Hello, el", "el") → "H<b>el</b>lo, <b>el</b>"   
