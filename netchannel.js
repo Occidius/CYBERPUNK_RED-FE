@@ -63,7 +63,7 @@ function ACE()
     document.getElementById('netData').style.backgroundColor = 'rgb(255, 160, 231)';
     document.getElementById('netData').style.borderColor = 'black';
     document.getElementById('netData').style.color = 'black';
-    document.getElementById('plrImg').src = './images/ACE.jpg';
+    document.getElementById('plrImg').src = './images/PLRIMAGES/ACE.jpg';
     POPULATEAQM();
 }
 
@@ -75,7 +75,7 @@ function HELLA()
     document.getElementById('netData').style.backgroundColor = 'rgb(249, 123, 247)';
     document.getElementById('netData').style.borderColor = 'rgb(255, 0, 179)';
     document.getElementById('netData').style.color = 'black';
-    document.getElementById('plrImg').src = './images/HELLA.png';
+    document.getElementById('plrImg').src = './images/PLRIMAGES/HELLA.png';
     POPULATEHQM();
 }
 
@@ -86,7 +86,7 @@ function VALVE()
     document.getElementById('NETh1').style.fontSize = '350%';
     document.getElementById('netData').style.backgroundColor = 'rgb(148, 148, 148)';
     document.getElementById('netData').style.borderColor = 'rgb(0, 0, 0)';
-    document.getElementById('plrImg').src = './images/VALVE.jpg';
+    document.getElementById('plrImg').src = './images/PLRIMAGES/VALVE.jpg';
     POPULATEVQM();
 }
 
@@ -97,7 +97,7 @@ function ROOK()
     document.getElementById('NETh1').style.fontSize = '350%';
     document.getElementById('netData').style.backgroundColor = 'rgb(255, 255, 0)';
     document.getElementById('netData').style.borderColor = 'rgb(208, 255, 0)';
-    document.getElementById('plrImg').src = './images/ROOK.jpg';
+    document.getElementById('plrImg').src = './images/PLRIMAGES/ROOK.jpg';
     POPULATERQM();
 }
 
@@ -191,4 +191,5 @@ function boldString(str, substr) {
   var strRegExp = new RegExp(substr, 'g');
   return str.replace(strRegExp, '<b>'+substr+'</b>');
 }
+
 // Example: boldString("Hello, el", "el") → "H<b>el</b>lo, <b>el</b>"   
