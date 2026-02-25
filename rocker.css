@@ -147,6 +147,13 @@ h3 {
     width: 100%;
 }
 
+.ILLEFT .ILLEFTIMG:hover {
+    border-width: 2px;
+    border-style: groove;
+    border-color: blue;
+    cursor:pointer;
+}
+
 .ILMID {
     float:right;
     width: 29%;
@@ -155,6 +162,12 @@ h3 {
 
 .ILMID .ILMIDIMG {
     width: 100%;
+}
+.ILMID .ILMIDIMG:hover {
+    border-width: 2px;
+    border-style: groove;
+    border-color: blue;
+    cursor:pointer;
 }
 
 .ILRIGHT {
@@ -165,6 +178,12 @@ h3 {
 
 .ILRIGHT .ILRIGHTIMG {
     width: 100%;
+}
+.ILRIGHT .ILRIGHTIMG:hover {
+    border-width: 2px;
+    border-style: groove;
+    border-color: blue;
+    cursor:pointer;
 }
 
 .newsContainer{
@@ -192,6 +211,7 @@ h3 {
 
 .burgMenu:hover {
   background-color: rgb(51, 0 , 0);
+  cursor: pointer;
 }
 
 .hiddenMenu {
@@ -230,6 +250,16 @@ h3 {
     
     background-image: url('images/SITEASSETS/NAVBACKGROUND.gif');
     background-position: 12%;
+}
+
+.hiddenMenu .subMenuOpt:hover{
+    box-shadow: 
+     -3px -3px 0 rgb(255, 0, 255),
+    3px -3px 0 rgb(255, 0, 255),
+    -3px 3px 0 rgb(255, 0, 255),
+    3px 3px 0 rgb(255, 0, 255);
+    cursor: pointer;
+
 }
 
 .hiddenMenu .subMenuImg{
@@ -304,6 +334,10 @@ h3 {
     font-size: 110%;
 }
 
+.entryField .entryTEXT:hover {
+    background-color: antiquewhite;
+}
+
 .netData {
     border-style: dashed;
     border-width: 4px;
@@ -347,6 +381,15 @@ h3 {
     color: darkorchid;
     background-color: darkslateblue;
     animation: wheelHueColor 10s infinite;
+}
+
+.btn:hover{
+    cursor: pointer;
+    box-shadow: 
+    -1px -1px 0 rgb(255, 0, 255),
+    1px -1px 0 rgb(255, 0, 255),
+    -1px 1px 0 rgb(255, 0, 255),
+    1px 1px 0 rgb(255, 0, 255);;
 }
 
 @keyframes wheelHueColor {
