@@ -111,9 +111,9 @@ function POPULATEAQM()
 
     JOBTASK1 = "Junkyard Warehouse - Primo: Weekly 7% finders fee(X) \n^^^[Traded for reduced rent (1200 EB)]\n-Sold Tiger Skeleton to Reginald Ketel\nCalus's Lockbox:\n-[3] Electronic Locks\n-[2] Brass Padlocks\n-[1] Broken Biometric Reader\n"; 
     JOBTASK2 = "Wait for a Ping from Viktor\n"; 
-    JOBTASK3 = "NEPHEW: Payout processing: 1 weeks\nPRIMO: Investigating the disappearnce of a 'Reese O'Neil'\nSJ: N/A\nALT: N/A\n";
+    JOBTASK5 = "NEPHEW: Payout processing: 1 weeks\nPRIMO: Investigating the disappearnce of a 'Reese O'Neil'\nSJ: N/A\nALT: N/A\nSiobhan:N/A\n";
     JOBTASK4 = "Date Night: Contact Mito using the information from Hella to setup your date\n";
-    JOBTASK5 = "Keep an eye on the listing for your Old World Tequila\n";
+    JOBTASK3 = "Keep an eye on the listing for your Old World Tequila\n";
     QMTARGET[JOBTASK].textContent = JOBTASK1 + JOBTASK2 + JOBTASK3 + JOBTASK4 + JOBTASK5;
     
     MINMAJ1 = ""
@@ -193,3 +193,4 @@ function boldString(str, substr) {
 }
 
 // Example: boldString("Hello, el", "el") → "H<b>el</b>lo, <b>el</b>"   
+
