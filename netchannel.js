@@ -106,26 +106,27 @@ function POPULATEAQM()
     const QMTARGET = document.getElementsByClassName('QMItem');
     PCQUEST1 = "Vigilante Shit:\nThe old contact portal does not, in fact, work...fuck.,,Maybe there\'s some other way I can grab Alt\'s attention again, ask for some advice...\n-CONTINUE MAIN CAMPAIGN FOR UPDATES\n\n";
     PCQUEST2 = "Anti-Hero: \nArasaka bastards in Japantown and now someone\'s wearing my face, messing with my network? Shits getting deep...hope you got some decent boots...\n-CONTINUE MAIN CAMPAIGN FOR UPDATES\n\n";
-    PCQUEST3 = "[HELLA] - New American Idiot:\nGet in touch with Mito and ask what needs to be setup for Hella's show in two days\n";
-    QMTARGET[PCQUEST].textContent = PCQUEST1 + PCQUEST2 + PCQUEST3;   
+    PCQUEST3 = "[HELLA] - New American Idiot:\n-Get in touch with Mito and ask what needs to be setup for Hella's show in two days\n";
+    PCQUEST4 = "UNRECOVERABLES: WATSON ADDRESS\nUNRECOVERABLES: CORPO PLAZA ADDRESS\nUNRECOVERABLES: WESTBROOK ADDRESS\n";
+    QMTARGET[PCQUEST].textContent = PCQUEST1 + PCQUEST2 + PCQUEST3 + PCQUEST4;   
 
     JOBTASK1 = "Junkyard Warehouse - Primo: Weekly 7% finders fee(X) \n^^^[Traded for reduced rent (1200 EB)]\n-Sold Tiger Skeleton to Reginald Ketel\nCalus's Lockbox:\n-[3] Electronic Locks\n-[2] Brass Padlocks\n-[1] Broken Biometric Reader\n"; 
     JOBTASK2 = "Wait for a Ping from Viktor\n"; 
-    JOBTASK5 = "NEPHEW: Payout processing: 1 weeks\nPRIMO: Investigating the disappearnce of a 'Reese O'Neil'\nSJ: N/A\nALT: N/A\nSiobhan:N/A\n";
-    JOBTASK4 = "Date Night: Contact Mito using the information from Hella to setup your date\n";
-    JOBTASK3 = "Keep an eye on the listing for your Old World Tequila\n";
-    QMTARGET[JOBTASK].textContent = JOBTASK1 + JOBTASK2 + JOBTASK3 + JOBTASK4 + JOBTASK5;
+    JOBTASKF = "NEPHEW: Payout processing: 1 weeks\nPRIMO: Investigating the disappearnce of a 'Reese O'Neil'\nSJ: N/A\nALT: N/A\nSiobhan:N/A\n";
+    JOBTASK3 = "Date Night: Contact Mito using the information from Hella to setup your date\n";
+    JOBTASK4 = "Keep an eye on the listing for your Old World Tequila\n";
+    QMTARGET[JOBTASK].textContent = JOBTASK1 + JOBTASK2 + JOBTASK3 + JOBTASK4 + JOBTASKF;
     
-    MINMAJ1 = ""
-    MINMAJ2 = "Batteries Not Included - Torch\n"
+    MINMAJ1 = "";
+    MINMAJ2 = "Batteries Not Included - Torch\n";
 
     QMTARGET[MAJORMINOR].textContent = MINMAJ1 + MINMAJ2;
 }
 
 function POPULATEHQM(){
     const QMTARGET = document.getElementsByClassName('QMItem');
-    PCQuest1 = "Sucka Free:\n-Mr. Hands mentioned everyone in the crew playing their role, and if someone else in the crew can play the leader: I can play my part to a sweeter tune...wonder what that means...\nCONTINUE MAIN QUEST FOR UPDATES\n\n";
-    PCQuest2 = "New American Idiot: After chatting with Mito, and agreeing to do a show for his bar (among other things) the next steps are to get that bar in working order over the next two days.\n\n";
+    PCQuest1 = "Sucka Free:\n-Mr. Hands mentioned everyone in the crew playing their role, and if someone else in the crew can play the leader: I can play my part to a sweeter tune...wonder what that means...\n-CONTINUE MAIN QUEST FOR UPDATES\n\n";
+    PCQuest2 = "New American Idiot:\n-After chatting with Mito, and agreeing to do a show for his bar (among other things) the next steps are to get that bar in working order over the next two days.\n\n";
     QMTARGET[PCQUEST].textContent = PCQuest1 + PCQuest2;
 
     JOBTASK1 = "N.A.I. - Source a construction crew to refurb the bar and get it fixed up\n"; 
@@ -140,7 +141,7 @@ function POPULATEHQM(){
 }
 function POPULATEVQM(){
     const QMTARGET = document.getElementsByClassName('QMItem');
-    PCQuest1 = "Dirty Harry: Mallard knows his weapons! We figured out that much about his past after he managed to somehow fix Boogaloo's jamming issue. Man....all these veterans across NC should really buddy-up or somethin...\nCONTINUE MAIN CAMPAIGN FOR UPDATES\n\n";
+    PCQuest1 = "Dirty Harry:\nMallard knows his weapons! We figured out that much about his past after he managed to somehow fix Boogaloo's jamming issue. Man....all these veterans across NC should really buddy-up or somethin...\n-CONTINUE MAIN CAMPAIGN FOR UPDATES\n\n";
     PCQuest2 = "BOOGALOO COMPONENTS:\nWEAPONS TECH: 49\nHIGH-GRADE MATS: 17\n";
     QMTARGET[PCQUEST].textContent = PCQuest1 + PCQuest2;
 
@@ -170,7 +171,7 @@ function POPULATERQM(){
 
     MINMAJ1 = "";
     MINMAJ2 = "";
-    MINMAJ3 = "Batteries Not Included - Torch\n"
+    MINMAJ3 = "Batteries Not Included - Torch\n";
 
     QMTARGET[MAJORMINOR].textContent = MINMAJ1 + MINMAJ2 + MINMAJ3;
 }
@@ -193,4 +194,5 @@ function boldString(str, substr) {
 }
 
 // Example: boldString("Hello, el", "el") → "H<b>el</b>lo, <b>el</b>"   
+
 
