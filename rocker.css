@@ -378,6 +378,8 @@ h3 {
     font-family: monospace;
     margin-bottom: 5px;
     width: 80%;
+    height: 30px;
+    font-size: 140%;
     color: darkorchid;
     background-color: darkslateblue;
     animation: wheelHueColor 10s infinite;
@@ -550,3 +552,4 @@ h3 {
     color: green;
 
 }
+
