@@ -101,6 +101,7 @@ function ROOK()
     POPULATERQM();
 }
 
+
 function POPULATEAQM()
 {
     const QMTARGET = document.getElementsByClassName('QMItem');
@@ -114,7 +115,7 @@ function POPULATEAQM()
     JOBTASK2 = "Wait for a Ping from Viktor\n"; 
     JOBTASKF = "NEPHEW: Payout processing: Estimated for November 6th\nPRIMO:N/A\nSJ: Keeping tabs on public outlook on Hella's show\nALT: N/A\nSiobhan:N/A\n";
     JOBTASK3 = "Date Night: The date with Mito went...kind of well? He's sweet, and a little scatter-brained - Wait for Mito to reach out\n";
-    JOBTASK4 = "Tequila Payout: 2250 EB [SET TO CLOSE IN {3} DAYS\n";
+    JOBTASK4 = "Tequila Payout: 2250 EB [SET TO CLOSE IN {3} DAYS]\n";
     QMTARGET[JOBTASK].textContent = JOBTASK1 + JOBTASK2 + JOBTASK3 + JOBTASK4 + JOBTASKF;
     
     MINMAJ1 = "";
@@ -126,12 +127,12 @@ function POPULATEAQM()
 function POPULATEHQM(){
     const QMTARGET = document.getElementsByClassName('QMItem');
     PCQuest1 = "Sucka Free:\n-Mr. Hands mentioned everyone in the crew playing their role, and if someone else in the crew can play the leader: I can play my part to a sweeter tune...wonder what that means...\n-CONTINUE MAIN QUEST FOR UPDATES\n\n";
-    PCQuest2 = "New American Idiot:\nPrep for the show at the Pigs Wing tomorrow\n\n";
+    PCQuest2 = "New American Idiot:\n-Prep for the show at the Pigs Wing tomorrow\n\n";
     QMTARGET[PCQUEST].textContent = PCQuest1 + PCQuest2;
 
-    JOBTASK1 = "N.A.I. : 0/16,000 EB";
-    JOBTASK2 = ;
-    JOBTASK3 = ; 
+    JOBTASK1 = "N.A.I. : 0/16,000 EB\n";
+    JOBTASK2 = "";
+    JOBTASK3 = ""; 
     QMTARGET[JOBTASK].textContent = JOBTASK1 + JOBTASK2 + JOBTASK3;
 
     MINMAJ1 = "";
@@ -141,8 +142,8 @@ function POPULATEHQM(){
 }
 function POPULATEVQM(){
     const QMTARGET = document.getElementsByClassName('QMItem');
-    PCQuest1 = "Dirty Harry:\nMallard knows his weapons! We figured out that much about his past after he managed to somehow fix Boogaloo's jamming issue. Man....all these veterans across NC should really buddy-up or somethin...\n-CONTINUE MAIN CAMPAIGN FOR UPDATES\n\n";
-    PCQuest2 = "BOOGALOO COMPONENTS:\nWEAPONS TECH: 149\nHIGH-GRADE MATS: 35\n";
+    PCQuest1 = "Dirty Harry:\n-Mallard knows his weapons! We figured out that much about his past after he managed to somehow fix Boogaloo's jamming issue. Man....all these veterans across NC should really buddy-up or somethin...\n-CONTINUE MAIN CAMPAIGN FOR UPDATES\n\n";
+    PCQuest2 = "BOOGALOO COMPONENTS:\n-WEAPONS TECH: 149\n-HIGH-GRADE MATS: 35\n";
     QMTARGET[PCQUEST].textContent = PCQuest1 + PCQuest2;
 
     JOBTASK1 = "Amalgamated Standard Hand: 0%\n"; 
@@ -181,13 +182,9 @@ function COMMONQM()
     
     const CMTARGET = document.getElementsByClassName('CommonItem');
 
-    CMTARGET[CAMPAIGN].textContent = "[SAMMIE] = ESCAPE THE ICARUS LAB\n[PRIMARY] = Understanding a Ghost [Rogue] - Rendevouz with Torch\n";
+    CMTARGET[CAMPAIGN].textContent = "[PRIMARY] = Understanding a Ghost [Rogue] - Rendevouz with Torch\n[SAMMIE] = ESCAPE THE ICARUS LAB\n";
 
     NPCQUEST1 = "Never Fade Away - Torch\n-Await an update on the situation\n";
-    NPCQUEST2 = "Tech Drops - Torch\nInvestigate the safehouse locations Torch sent your crew\n";
-    CMTARGET[NPCQUEST].textContent = NPCQUEST1;
+    NPCQUEST2 = "Tech Drops - Torch\n-Investigate the safehouse locations Torch sent your crew\n";
+    CMTARGET[NPCQUEST].textContent = NPCQUEST1 + NPCQUEST2;
 } 
-
-
-
-
