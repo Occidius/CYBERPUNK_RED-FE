@@ -186,5 +186,7 @@ function COMMONQM()
 
     NPCQUEST1 = "Never Fade Away - Torch\n-Await an update on the situation\n";
     NPCQUEST2 = "Tech Drops - Torch\n-Investigate the safehouse locations Torch sent your crew\n";
-    CMTARGET[NPCQUEST].textContent = NPCQUEST1 + NPCQUEST2;
+    NPCQUEST3 = "Goin' On Patrol - El Capitan\n-Wait for updates from the Capitan about Sarah's project\n";
+    CMTARGET[NPCQUEST].textContent = NPCQUEST1 + NPCQUEST2 + NPCQUEST3;
+
 } 
