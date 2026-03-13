@@ -182,7 +182,7 @@ function COMMONQM()
     
     const CMTARGET = document.getElementsByClassName('CommonItem');
 
-    CMTARGET[CAMPAIGN].textContent = "[PRIMARY] = Understanding a Ghost [Rogue] - Rendevouz with Torch\n[SAMMIE] = ESCAPE THE ICARUS LAB\n";
+    CMTARGET[CAMPAIGN].textContent = "[PRIMARY] = Understanding a Ghost [Rogue] - Rendevouz with Torch\n[SAMMIE] = ESCAPE THE MILITECH LAB\n";
 
     NPCQUEST1 = "Never Fade Away - Torch\n-Await an update on the situation\n";
     NPCQUEST2 = "Tech Drops - Torch\n-Investigate the safehouse locations Torch sent your crew\n";
