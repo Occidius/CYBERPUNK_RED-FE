@@ -144,7 +144,7 @@ function POPULATEVQM(){
     const QMTARGET = document.getElementsByClassName('QMItem');
     PCQuest1 = "Dirty Harry:\nDad's name was Teddy, or 'Theodore'.....The video mentioned the Valentinos\n=> Find a way to contact the Valentinos in Heywood\n";
     PCQuestE = "ALTERNATIVE: Help Mallard access the report Michiko gave him\n\n";
-    PCQuest2 = "BOOGALOO COMPONENTS:\n-WEAPONS TECH: 149\n-HIGH-GRADE MATS: 35\n";
+    PCQuest2 = "BOOGALOO COMPONENTS:\n-WEAPONS TECH: 49\n-HIGH-GRADE MATS: 17\n";
     QMTARGET[PCQUEST].textContent = PCQuest1 + PCQuestE+ PCQuest2;
 
     JOBTASK1 = "Amalgamated Standard Hand: 0%\n"; 
