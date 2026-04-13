@@ -274,7 +274,7 @@ h3 {
     font-size: 125%;
     background-color: black;
     color: rgb(220,220,220);
-    width: 90%;
+    width: 100%;
 }
 
 .RBOW {
@@ -550,6 +550,4 @@ h3 {
 
 .test { 
     color: green;
-
 }
-
