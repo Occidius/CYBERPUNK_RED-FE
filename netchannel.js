@@ -127,7 +127,7 @@ function POPULATEAQM()
 function POPULATEHQM(){
     const QMTARGET = document.getElementsByClassName('QMItem');
     PCQuest1 = "Sucka Free:\n-Alright, lets play the role of pain-in-Arasakas-Ass\n=> Help Ace and the crew get Alt Cunningham into Arasaka's Datavault\n\n";
-    PCQuest2 = "New American Idiot:\n-Now THAT's how you bring down a secret laboratory\n=> Deal with the aftermath of the raid, Rendezvouz with Kyson, and deal with Saint Providence\n\n";
+    PCQuest2 = "New American Idiot:\n-One and done, now for the rest of them\n=> Converse with Mito about the other buildings on 11th Ave\n\n";
     QMTARGET[PCQUEST].textContent = PCQuest1 + PCQuest2;
 
     JOBTASK1 = "N.A.I. : 2,000 /16,000 EB\n";
@@ -144,6 +144,7 @@ function POPULATEVQM(){
     const QMTARGET = document.getElementsByClassName('QMItem');
     PCQuest1 = "Dirty Harry:\nDad's name was Teddy, or 'Theodore'.....The video mentioned the Valentinos\n=> Find a way to contact the Valentinos in Heywood\n";
     PCQuestE = "ALTERNATIVE: Help Mallard access the report Michiko gave him\n\n";
+    PCQuestX = "Kids With Guns:\nA potential cure for Scrappy has been found\n=>Acquire an active ALAN particle sample";
     PCQuest2 = "BOOGALOO COMPONENTS:\n-WEAPONS TECH: 49\n-HIGH-GRADE MATS: 17\n";
     QMTARGET[PCQUEST].textContent = PCQuest1 + PCQuestE+ PCQuest2;
 
@@ -162,7 +163,7 @@ function POPULATEVQM(){
 }
 function POPULATERQM(){
     const QMTARGET = document.getElementsByClassName('QMItem');
-    PCQuest1 = "I Did and I Don't and I Do:\nGET FUCKED SAINT, YOU RIGHTEOUS PRICK\n=> Find a way to deal with Saint Providence.\n\n";
+    PCQuest1 = "I Did and I Don't and I Do:\nWell, somehow Saint managed to escape... But there's only so many places one can hide in this city.\n=> Investigate the locations stored on Kathleens Datachip [ALDECALDO TERRITORY]\n\n";
     PCQuestE = "Anti-Hero [ACE]\n=> Help the crew get Alt Cunningham access to the Arasaka Datavault\n\n";
     PCQuest2 = "But Once A Child:\n-Okay....we're making some progress!\n\n-Netrunner Gear: 0 / 2K\n-Weapons: 0 / 250 EB\n-Armor: 0 / 100 EB\n-Cyberware 0 / 5K\n-Misc Services: 0 / 5K\n-Housing: 8.5K / 40K\n-Find new Housing Option\n";
     QMTARGET[PCQUEST].textContent = PCQuest1 + PCQuestE + PCQuest2;
@@ -184,10 +185,10 @@ function COMMONQM()
     
     const CMTARGET = document.getElementsByClassName('CommonItem');
 
-    CMTARGET[CAMPAIGN].textContent = "[PRIMARY] => Enter Sandman [Rogue] - Meet with the Aldecaldos in the Badlands\n[PRIMARY] => Suspicious Minds [Michiko] - Find Kenshiro Saeba, former NCPD Lieutenant\n[SAMMIE] => GREYLOCK - Find a way to deal with Saint Providence / Rendezvouz with Hella\n";
+    CMTARGET[CAMPAIGN].textContent = "[PRIMARY] => Enter Sandman [Rogue] - Meet with the Aldecaldos in the Badlands\n[PRIMARY] => Suspicious Minds [Michiko] - Find Kenshiro Saeba, former NCPD Lieutenant\n";
     NPCQUEST1 = "Never Fade Away - Torch\n-Respond to Torch's Ping regarding Elly\n\n";
     NPCQUEST2 = "Tech Drops - Torch\n-Investigate the safehouse locations Torch sent your crew\n\n";
     NPCQUEST3 = "Ghost In The Shell - Nyx\n-Respond to Nyx's Ping\n\n";
-    NPCQUEST4 = "Big Brohter - El Capitan\n-Check in with El Capitan to see what he found using Sarah's Network.\n\n";
+    NPCQUEST4 = "Big Brother - El Capitan\n-Check in with El Capitan to see what he found using Sarah's Network.\n\n";
     CMTARGET[NPCQUEST].textContent = NPCQUEST1 + NPCQUEST2 + NPCQUEST3;
 } 
