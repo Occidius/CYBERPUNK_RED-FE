@@ -10,12 +10,12 @@ var NPCQUEST = 1;
 function SUBMIT()
 {
     const userName = document.getElementById("entryNAME");
-    const userPass = document.getElementById("entryPASS");
+    // const userPass = document.getElementById("entryPASS");
 
     userNInput = userName.value;
-    userPInput = userPass.value;
+    // userPInput = userPass.value;
 
-    result = loginCheck(userNInput, userPInput);
+    result = loginCheck(userNInput);
     
 
     if (result === 0)
@@ -108,14 +108,14 @@ function POPULATEAQM()
     PCQUEST1 = "Vigilante Shit:\n-BIG SIS MICHIKO!\n=> Succesfully infiltrate the Arasaka Datavault Alt pin-pointed and upload her internal gateway\n\n";
     PCQUEST2 = "Anti-Hero:\n-With the Ghoul trapped under the Icarus rubble, we can safely assume most if not EVERYONE we talk to for the next few days to be the real-deal.\n=> Use Alt's help to get out of Arasaka sight-lines\n\n";
     PCQUEST3 = "";
-    PCQUEST4 = "UNRECOVERABLES: CORPO PLAZA ADDRESS\nUNRECOVERABLES: Adrian Beau is a ruined man, plagued with fear and haunted by the corps";
+    PCQUEST4 = "UNRECOVERABLES: WATSON ADDRESS\nUNRECOVERABLES: CORPO PLAZA ADDRESS\nUNRECOVERABLES: WESTBROOK ADDRESS\n";
     QMTARGET[PCQUEST].textContent = PCQUEST1 + PCQUEST2 + PCQUEST3 + PCQUEST4;   
 
     JOBTASK1 = ""; 
     JOBTASK2 = "Calus's Lockbox:\n-[3] Electronic Locks\n-[2] Brass Padlocks\n-[1] Broken Biometric Reader\n";     
-    JOBTASKF = "PRIMO:N/A\nSJ:N/A\nALT: N/A\nSiobhan:N/A\n";
+    JOBTASKF = "NEPHEW: Payout processing: Estimated for November 6th\nPRIMO:N/A\nSJ:N/A\nALT: N/A\nSiobhan:N/A\n";
     JOBTASK3 = "Date Night: The date with Mito went...kind of well? He's sweet, and a little scatter-brained - Wait for Mito to reach out\n";
-    JOBTASK4 = "";
+    JOBTASK4 = "Tequila Payout: 2250 EB [SET TO CLOSE IN {1} DAY]\n";
     QMTARGET[JOBTASK].textContent = JOBTASK1 + JOBTASK2 + JOBTASK3 + JOBTASK4 + JOBTASKF;
     
     MINMAJ1 = "";
@@ -127,10 +127,10 @@ function POPULATEAQM()
 function POPULATEHQM(){
     const QMTARGET = document.getElementsByClassName('QMItem');
     PCQuest1 = "Sucka Free:\n-Alright, lets play the role of pain-in-Arasakas-Ass\n=> Help Ace and the crew get Alt Cunningham into Arasaka's Datavault\n\n";
-    PCQuest2 = "New American Idiot:\n-One and done, now for the rest of them\n=> Converse with Mito about the other buildings on 11th Ave\n\n";
+    PCQuest2 = "New American Idiot:\n-Now THAT's how you bring down a secret laboratory\n=> Deal with the aftermath of the raid, Rendezvouz with Kyson, and deal with Saint Providence\n\n";
     QMTARGET[PCQUEST].textContent = PCQuest1 + PCQuest2;
 
-    JOBTASK1 = "";
+    JOBTASK1 = "N.A.I. : 2,000 /16,000 EB\n";
     JOBTASK2 = "";
     JOBTASK3 = ""; 
     QMTARGET[JOBTASK].textContent = JOBTASK1 + JOBTASK2 + JOBTASK3;
@@ -142,10 +142,9 @@ function POPULATEHQM(){
 }
 function POPULATEVQM(){
     const QMTARGET = document.getElementsByClassName('QMItem');
-    PCQuest1 = "Dirty Harry:\nWell...atleast Theo wasn't just a deadbeat loser!\n=> Visit Sasha's Grave [Padre's Datachip]\n";
+    PCQuest1 = "Dirty Harry:\nDad's name was Teddy, or 'Theodore'.....The video mentioned the Valentinos\n=> Find a way to contact the Valentinos in Heywood\n";
     PCQuestE = "ALTERNATIVE: Help Mallard access the report Michiko gave him\n\n";
-    PCQuestX = "Kids With Guns:\nA potential cure for Scrappy has been found\n=> Begin synthesizing a cure with the sample from Scrappy";
-    PCQuest2 = "BOOGALOO COMPONENTS:\n-WEAPONS TECH: 49\n-HIGH-GRADE MATS: 17\n";
+    PCQuest2 = "BOOGALOO COMPONENTS:\n-WEAPONS TECH: 149\n-HIGH-GRADE MATS: 35\n";
     QMTARGET[PCQUEST].textContent = PCQuest1 + PCQuestE+ PCQuest2;
 
     JOBTASK1 = "Amalgamated Standard Hand: 0%\n"; 
@@ -163,9 +162,9 @@ function POPULATEVQM(){
 }
 function POPULATERQM(){
     const QMTARGET = document.getElementsByClassName('QMItem');
-    PCQuest1 = "I Did and I Don't and I Do:\nWell, somehow Saint managed to escape... But there's only so many places one can hide in this city.\n=> Investigate the locations stored on Kathleens Datachip [ALDECALDO TERRITORY]\n\n";
+    PCQuest1 = "I Did and I Don't and I Do:\nGET FUCKED SAINT, YOU RIGHTEOUS PRICK\n=> Find a way to deal with Saint Providence.\n\n";
     PCQuestE = "Anti-Hero [ACE]\n=> Help the crew get Alt Cunningham access to the Arasaka Datavault\n\n";
-    PCQuest2 = "But Once A Child:\n-Okay....we're making some progress!\n\n-Netrunner Gear: 0 / 2K\n-Weapons: 0 / 250 EB\n-Armor: 0 / 100 EB\n-Cyberware 0 / 5K\n-Misc Services: 0 / 5K\n-Housing: 8.5K / 40K\n-NEW HOUSING ACQUIRED\n";
+    PCQuest2 = "But Once A Child:\n-Okay....we're making some progress!\n\n-Netrunner Gear: 0 / 2K\n-Weapons: 0 / 250 EB\n-Armor: 0 / 100 EB\n-Cyberware 0 / 5K\n-Misc Services: 0 / 5K\n-Housing: 8.5K / 40K\n-Find new Housing Option\n";
     QMTARGET[PCQUEST].textContent = PCQuest1 + PCQuestE + PCQuest2;
 
     JOBTASK1 = "See Nothin\', Say Nothin(2)\'\n-Respond to Nyx's new Ping\n"; 
@@ -185,10 +184,10 @@ function COMMONQM()
     
     const CMTARGET = document.getElementsByClassName('CommonItem');
 
-    CMTARGET[CAMPAIGN].textContent = "[PRIMARY] => Enter Sandman [Rogue] - Meet with the Aldecaldos in the Badlands\n[PRIMARY] => Suspicious Minds [Michiko] - Find Kenshiro Saeba, former NCPD Lieutenant\n[NPC] => Return of the Queen [Rogue] - Speak with Rogue at the Afterlife\n";
+    CMTARGET[CAMPAIGN].textContent = "[PRIMARY] => Enter Sandman [Rogue] - Meet with the Aldecaldos in the Badlands\n[PRIMARY] => Suspicious Minds [Michiko] - Find Kenshiro Saeba, former NCPD Lieutenant\n[SAMMIE] => GREYLOCK - Find a way to deal with Saint Providence / Rendezvouz with Hella\n";
     NPCQUEST1 = "Never Fade Away - Torch\n-Respond to Torch's Ping regarding Elly\n\n";
     NPCQUEST2 = "Tech Drops - Torch\n-Investigate the safehouse locations Torch sent your crew\n\n";
     NPCQUEST3 = "Ghost In The Shell - Nyx\n-Respond to Nyx's Ping\n\n";
-    NPCQUEST4 = "Big Brother - El Capitan\n-Check in with El Capitan to see what he found using Sarah's Network.\n\n";
+    NPCQUEST4 = "Big Brohter - El Capitan\n-Check in with El Capitan to see what he found using Sarah's Network.\n\n";
     CMTARGET[NPCQUEST].textContent = NPCQUEST1 + NPCQUEST2 + NPCQUEST3;
 } 
